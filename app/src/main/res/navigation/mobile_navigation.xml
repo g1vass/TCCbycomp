@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    android:label="@string/menu_social"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.projetofinal.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_pesquisar"
+        android:name="com.example.projetofinal.ui.gallery.GalleryFragment"
+        android:label="@string/menu_pesquisar"
+        tools:layout="@layout/fragment_pesquisar" />
+
+    <fragment
+        android:id="@+id/nav_promocoes"
+        android:name="com.example.projetofinal.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_promocoes"
+        tools:layout="@layout/fragment_promocoes" />
+    <fragment
+        android:id="@+id/nav_historico"
+        android:name="com.example.projetofinal.HistoricoFragment"
+        android:label="@string/menu_historico"
+        tools:layout="@layout/fragment_historico" />
+    <fragment
+        android:id="@+id/nav_avaliacao"
+        android:name="com.example.projetofinal.PesquisarFragment"
+        android:label="@string/menu_avaliacoes"
+        tools:layout="@layout/fragment_avaliacoes" />
+    <fragment
+        android:id="@+id/nav_social"
+        android:name="com.example.projetofinal.SocialFragment"
+        android:label="@string/menu_social"
+        tools:layout="@layout/fragment_social" />
+    <fragment
+        android:id="@+id/nav_adicionarnota"
+        android:name="com.example.projetofinal.AdicionarFragment"
+        android:label="@string/menu_adicionar"
+        tools:layout="@layout/fragment_adicionar" />
+</navigation>
